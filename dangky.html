@@ -1,68 +1,127 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Siêu thị điện máy - máy vi tính trực tuyến Salomon</title>
-	</head>
 
-	<body>
-    	<table width="100%" border="1">
-        	<tr>
-            	<td colspan = "2" align="left">Nhập thông tin đăng ký</td>
-            </tr>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Siêu thị điện máy - máy vi tính trực tuyến Salomon</title>
+</head>
+
+<body>
+    <form id="frmReg" name="frmReg" method="post" action="">
+        <table width="100%" border="1" cellpadding="0" cellspacing="5">
             <tr>
-            	<td width="35%" align="left">Tên truy cập:</td>
-                <td width="65%"></td>
+                <td colspan="2" align="left">Nhập thông tin đăng ký</td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Mật khẩu:</td>
-                <td width="65%"></td>
+                <td width="35%" align="left">Tên truy cập:</td>
+                <td>
+                    <input type="text" id="txtUsername" name="txtUsername" required="required" placeholder="Tên đăng nhập" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Nhập lại mật khẩu:</td>
-                <td width="65%"></td>
+                <td width="35%" align="left">Mật khẩu:</td>
+                <td>
+                    <input type="text" id="txtPassword" name="txtPassword" placeholder="Mật khẩu" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Tỉnh thành:</td>
-                <td width="65%"></td>
+                <td width="35%" align="left">Nhập lại mật khẩu:</td>
+                <td>
+                    <input type="text" id="txtConfirmPassword" name="txtConfirmPassword" placeholder="Nhập lại mật khẩu" required="required"
+                    />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Họ và tên:</td>
-                <td width="65%"></td>
+                <td width="35%" align="left">Tỉnh thành:</td>
+                <td>
+                    <select name="slRegion" id="slRegion" required>
+                        <option value="default">Chọn tỉnh thành</option>
+                        <option value="CT">Cần Thơ</option>
+                        <option value="TPHCM">TP. HCM</option>
+                        <option value="...">...</option>
+                    </select>
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Địa chỉ:</td>
-                <td width="65%"></td>            
+                <td width="35%" align="left">Họ và tên:</td>
+                <td>
+                    <input type="text" id="txtName" name="txtName" placeholder="Họ và tên" required="required" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Số điện thoại:</td>
-                <td width="65%"></td>            
+                <td width="35%" align="left">Địa chỉ:</td>
+                <td>
+                    <input type="text" id="txtAddress" name="txtAddress" placeholder="Địa chỉ" required="required" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Email:</td>
-                <td width="65%"></td>            
+                <td width="35%" align="left">Số điện thoại:</td>
+                <td>
+                    <input type="text" id="txtPhone" name="txtPhone" placeholder="Số điện thoại" required="required" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Ngày sinh:</td>
-                <td width="65%"></td>            
+                <td width="35%" align="left">Email:</td>
+                <td>
+                    <input type="text" id="txtEmail" name="txtEmail" placeholder="Email" required="required" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Mã số an toàn:</td>
-                <td width="65%"></td>            
+                <td width="35%" align="left">Ngày sinh:</td>
+                <td></td>
             </tr>
+
             <tr>
-            	<td width="35%" align="left">Đồng ý với quy định thành viên bên dưới:</td>
-                <td width="65%"></td>            
+                <td width="35%" align="left">Mã số an toàn:</td>
+                <td>
+                    <input type="text" id="txtCapcha" name="txtCapcha" placeholder="Mã số an toàn" required="required" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td colspan="2"></br></td>
+                <td width="35%" align="left">Đồng ý với quy định thành viên bên dưới:</td>
+                <td>
+                    <input type="checkbox" id="chkToS" name="chkToS" placeholder="Địa chỉ" required="required" />
+                    <label id="lblRequired">*</label>
+                </td>
             </tr>
+
             <tr>
-            	<td colspan="2">* là bắt buộc nhập</td>
+                <td colspan="2">
+                    <iframe src="quydinhthanhvien.html" width="100%" height="200px" scrolling="" allowtransparency="true" frameborder="0" marginwidth="0"
+                        marginheight="0" hspace="0" vspace="0"></iframe>
+                </td>
             </tr>
+
             <tr>
-            	<td colspan="2"></br></td>
+                <td colspan="2">* là bắt buộc nhập</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    </br>
+                </td>
             </tr>
         </table>
-	</body>
+    </form>
+</body>
+
 </html>
