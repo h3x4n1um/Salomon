@@ -2,7 +2,7 @@
 .TableContainer {
     border: solid 1px #ccc;
     background: #ffffff;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .TableContainer .Header{
@@ -10,21 +10,326 @@
     height: 35px;
     padding-left: 7px;
     font-weight: bold;
-    color: #444;
+    color: #444
 }
 
 .DanhSachSanPham img {
     margin-right: 5px;
     width: 45px;
-    float: left;
+    float: left
 }
 
 .TenSanPham {
     color: #2780B9;
-    font-weight: bold;
+    font-weight: bold
 }
 
 .Gia {
     color: red;
+    font-weight: bold
+}
+
+/* CSS menu trái */
+
+.LeftMenu {
+    padding: 0px;
+    margin: 0px
+}
+
+.LeftMenu .Level1 {
+    color: #555555;
     font-weight: bold;
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 10px
+}
+
+.LeftMenu .Level1 ul {
+    padding-left: 30px
+}
+
+.LeftMenu .Level1 a {
+    color: #444444;
+    text-decoration: none
+}
+
+.LeftMenu .Level2 {
+    color: #888888;
+    font-weight: bold;
+    list-style-type: none;
+    list-style-image: url(images/bullet_icon.png);
+    border-bottom: solid 1px #ccc;
+    padding: 7px;
+    padding-left: 0px
+}
+
+.LeftMenu .Level2 a {
+    color: #666666;
+    text-decoration: none
+}
+
+.LeftMenu .Level2 a:hover {
+    color: #EE2207;
+    text-decoration: none
+}
+
+/* Kết thúc CSS menu trái */
+
+/* CSS bảng dữ liệu */
+
+.TableData {
+    background: #FFFFFF;
+    font: 11px;
+    border-collapse: collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif
+}
+
+.TableData th {
+    background: #0776be;
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: solid 1px #ccc
+}
+
+.TableData .cotSTT {
+    text-align: center;
+    width: 10%
+}
+
+.TableData .cotTenSanPham {
+    text-align: left;
+    font-weight: bold;
+    color: #2780B9;
+    width: 40%
+}
+
+.TableData .cotHangSanXuat {
+    text-align: left;
+    width: 20%
+}
+
+.TableData .cotGia {
+    text-align: right;
+    font-weight: bold;
+    width: 30%;
+    color: red
+}
+
+.TableData .cotSoLuong {
+    text-align: center;
+    width: 5%
+}
+
+.TableData .cotSoLuong input {
+    text-align: center;
+    font-weight: bold
+}
+
+.TableData .InputButton {
+    color: #FFF;
+    border: solid 1px #ccc;
+    background: #0776BE;
+    padding: 3px
+}
+
+.TableData td {
+    border: solid 1px #ccc
+}
+
+/* Kết thúc CSS bảng dữ liệu */
+
+/* CSS biểu mẫu */
+
+.TableForm {
+    background: #FFFFFF;
+    font: 11px
+}
+
+.TableForm td {
+    border: solid 1px #ccc;
+    padding: 5px
+}
+
+.TableForm .TieuDe {
+    background: #0776BE;
+    color: #FFFFFF;
+    font-weight: bold
+}
+
+.TableForm .Left {
+    background: #eee;
+    text-align: right;
+    font-weight: bold;
+    width: 30%
+}
+
+.TableForm .Right {
+    text-align: left
+}
+
+.TableForm Bottom {
+    text-align: center
+}
+
+.TableForm input {
+    border: solid 1px #ccc;
+    background: #FFFFFF;
+    color: #333333
+}
+
+.TableForm select {
+    border: solid 1px #ccc;
+    background: #FFFFFF;
+    color: #333333
+}
+
+.TableForm .Button {
+    color: #fff;
+    border: solid 1px #ccc;
+    background: #0776BE;
+    padding: 2px;
+    margin-right: 5px
+}
+
+#lblBatBuoc {
+    color: red
+}
+
+/* Kết thúc CSS biểu mẫu*/
+
+/* CSS bố cục */
+
+#Skin_Container {
+    background: #ecf1f4;
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc
+}
+
+#Skin_Banner {
+    background: url(images/banner.png);
+    height: 117px;
+    width: 1000px
+}
+
+#Skin_Menu_Ngang {
+    height: 50px;
+    background: url(images/menu_bg.png);
+    background-repeat: repeat-x;
+    text-align: right;
+    font-weight: bold;
+    color: #111;
+    padding-right: 30px
+}
+
+#Skin_Content {
+    width: 100%;
+    padding: 5px
+}
+
+#Skin_Footer {
+    padding: 5px
+}
+
+#Skin_Footer p {
+    background: #4D625D;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0px
+}
+
+/* Kết thúc CSS bố cục */
+
+/* CSS liên kết menu ngang */
+
+#Skin_Menu_Ngang a, a:visited {
+    color: #031D70;
+    text-decoration: none
+}
+
+#Skin_Menu_Ngang a:hover {
+    color: #EE2207;
+    text-decoration: none
+}
+
+#Skin_Menu_Ngang a:active {
+    color: #0576C5;
+    text-decoration: none
+}
+
+.NganCach {
+    color: #aaa;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+/* Kết thúc menu ngang */
+
+#Wrapper {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    background: #ECF1F4;
+}
+
+#Wrapper #Header {
+    background: url(images/banner.png);
+    width: 1000px;
+    height: 117px
+}
+
+#Wrapper #TopMenu {
+    background: url(images/menu_bg.png) repeat-x;
+    height: 47px;
+    width: 1000px
+}
+
+#Wrapper #Left {
+    width: 200px;
+    min-height: 200px;
+    float: left;
+    padding: 3px
+}
+
+#Wrapper #Right {
+    width: 788px;
+    min-height: 200px;
+    float: right;
+    min-height: 100px;
+    padding: 3px
+}
+
+#Wrapper #Footer {
+    clear: both;
+    padding: 10px
+}
+
+#Wrapper #Footer p {
+    background: #4D625D;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0px
+}
+
+body {
+    margin: auto;
+    background: url(images/bg.png) #DDE2DC;
+    background-repeat: repeat-x;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: left
+}
+
+p {
+    line-height: 16px
+}
+
+a, a:visited {
+    color: #2780B9;
+    text-decoration: none
+}
+
+a:hover {
+    color: #DC4C2E;
+    text-decoration: none
 }

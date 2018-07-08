@@ -1,72 +1,89 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keyword" content="Salomon, Web bán hàng trực tuyến, đặt hàng online, Cần Thơ, toàn quốc, góp ý" />
     <title>Siêu thị điện máy - máy vi tính trực tuyến Salomon - Góp ý</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <form id="frmNhapLieu" method="POST" action="trangchuyenden.html">
-        <table width="100%" border="1" cellspacing="0" cellpadding="5">
+        <table width="100%" border="1" cellspacing="0" cellpadding="5" class="TableForm">
             <tr>
-                <td colspan="2">Nhập thông tin góp ý</td>
+                <td colspan="2" class="TieuDe">Nhập thông tin góp ý</td>
             </tr>
 
             <tr>
-                <td width="35%"><label>Chủ đề:</label></td>
-                <td>
+                <td width="35%" class="Left">
+                    <label>Chủ đề:</label>
+                </td>
+                <td class="Right">
                     <select name="slChuDe" id="slChuDe">
                         <option value="dichvu">Góp ý về dịch vụ</option>
                         <option value="website">Góp ý về website</option>
                         <option value="sanpham">Góp ý về sản phẩm</option>
                         <option value="khac">Góp ý khác</option>
-                    </select> <label id="lblBatBuoc">*</label>
+                    </select>
+                    <label id="lblBatBuoc">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td><label>Họ và tên:</label></td>
-                <td>
+                <td class="Left">
+                    <label>Họ và tên:</label>
+                </td>
+                <td class="Right">
                     <input name="txtTen" type="text" required id="txtTen" value="" maxlength="100" placeholder="Nhập họ và tên" autofocus/>
                     <label id="lblBatBuoc">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td><label>Địa chỉ:</label></td>
-                <td>
-                    <input name="txtDiaChi" type="text" required id="txtDiaChi" maxlength="255" placeholder="Nhập địa chỉ của bạn"/>
+                <td class="Left">
+                    <label>Địa chỉ:</label>
+                </td>
+                <td class="Right">
+                    <input name="txtDiaChi" type="text" required id="txtDiaChi" maxlength="255" placeholder="Nhập địa chỉ của bạn" />
                     <label id="lblBatBuoc">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td><label>Điện thoại:</label></td>
-                <td>
-                    <input name="txtDienThoai" type="tel" required id="txtDienThoai" maxlength="100" placeholder="Để lại số điện thoại vào đây" pattern="[0-9] {8,12}"/>
+                <td class="Left">
+                    <label>Điện thoại:</label>
+                </td>
+                <td class="Right">
+                    <input name="txtDienThoai" type="tel" required id="txtDienThoai" maxlength="100" placeholder="Để lại số điện thoại vào đây"
+                        pattern="[0-9] {8,12}" />
                     <label id="lblBatBuoc">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td><label>Email:</label></td>
-                <td>
+                <td class="Left">
+                    <label>Email:</label>
+                </td>
+                <td class="Right">
                     <input name="txtEmail" type="email" required id="txtEmail" maxlength="50" placeholder="Vui lòng nhập Email của bạn" multiple/>
                 </td>
             </tr>
 
             <tr>
-                <td>Bạn biết Salomon qua:</td>
-                <td>
+                <td class="Left">Bạn biết Salomon qua:</td>
+                <td class="Right">
                     <input name="chkBaoChi" type="checkbox" id="chkBaoChi" value="baochi">
-                    <label>Báo chí</label><br/>
+                    <label>Báo chí</label>
+                    <br/>
 
                     <input name="chkInternet" type="checkbox" id="chkInternet" value="baochi">
-                    <label>Internet</label><br/>
+                    <label>Internet</label>
+                    <br/>
 
                     <input name="chkMieng" type="checkbox" id="chkMieng" value="baochi">
-                    <label>Truyền miệng</label><br/>
+                    <label>Truyền miệng</label>
+                    <br/>
 
                     <input name="chkKhac" type="checkbox" id="chkKhac" value="baochi">
                     <label>Khác</label>
@@ -74,16 +91,22 @@
             </tr>
 
             <tr>
-                <td><label>Bạn có giao dịch trên Salomon chưa:</label></td>
-                <td>
-                    <input name="rdGiaoDich" type="radio" value="1" checked/><label>Có</label>
-                    <input name="rdGiaoDich" type="radio" value="0"/><label>Chưa</label>
+                <td class="Left">
+                    <label>Bạn có giao dịch trên Salomon chưa:</label>
+                </td>
+                <td class="Right">
+                    <input name="rdGiaoDich" type="radio" value="1" checked/>
+                    <label>Có</label>
+                    <input name="rdGiaoDich" type="radio" value="0" />
+                    <label>Chưa</label>
                 </td>
             </tr>
 
             <tr>
-                <td><lable>Nội dung:</lable></td>
-                <td>
+                <td class="Left">
+                    <lable>Nội dung:</lable>
+                </td>
+                <td class="Right">
                     <textarea name="txtNoiDung" cols="40" rows="7" id="txtNoiDung"></textarea>
                     <label id="lblBatBuoc">*</label>
                 </td>
@@ -96,9 +119,9 @@
             </tr>
 
             <tr>
-                <td colspan="2" align="center">
-                    <input name="btnGui" type="submit" id="btnGui" value="Gởi góp ý"/>
-                    <input name="btnNhapLai" type="reset" id="btnNhapLai" value="Nhập lại"/>
+                <td colspan="2" align="center" class="Bottom">
+                    <input name="btnGui" type="submit" id="btnGui" value="Gởi góp ý" />
+                    <input name="btnNhapLai" type="reset" id="btnNhapLai" value="Nhập lại" />
                 </td>
             </tr>
         </table>
