@@ -1,0 +1,30 @@
+/* CSS Document */
+.TableContainer {
+    border: solid 1px #ccc;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+
+.TableContainer .Header{
+    background: url(images/container_header_bg.png) repeat-x;
+    height: 35px;
+    padding-left: 7px;
+    font-weight: bold;
+    color: #444;
+}
+
+.DanhSachSanPham img {
+    margin-right: 5px;
+    width: 45px;
+    float: left;
+}
+
+.TenSanPham {
+    color: #2780B9;
+    font-weight: bold;
+}
+
+.Gia {
+    color: red;
+    font-weight: bold;
+}
