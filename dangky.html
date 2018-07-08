@@ -7,41 +7,40 @@
 </head>
 
 <body>
-    <form id="frmReg" name="frmReg" method="post" action="">
+    <form id="frmNhapLieu" name="frmNhapLieu" method="post" action="">
         <table width="100%" border="1" cellpadding="0" cellspacing="5">
             <tr>
-                <td colspan="2" align="left">Nhập thông tin đăng ký</td>
+                <td colspan="2">Nhập thông tin đăng ký</td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Tên truy cập:</td>
+                <td width="40%">Tên truy cập:</td>
                 <td>
-                    <input type="text" id="txtUsername" name="txtUsername" required="required" placeholder="Tên đăng nhập" />
+                    <input type="text" id="txtTenDangNhap" name="txtTenDangNhap" required placeholder="Tên đăng nhập" maxlength="50"/>
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Mật khẩu:</td>
+                <td>Mật khẩu:</td>
                 <td>
-                    <input type="text" id="txtPassword" name="txtPassword" placeholder="Mật khẩu" />
+                    <input type="password" id="txtMatKhau" name="txtMatKhau" required placeholder="Mật khẩu"/>
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Nhập lại mật khẩu:</td>
+                <td>Nhập lại mật khẩu:</td>
                 <td>
-                    <input type="text" id="txtConfirmPassword" name="txtConfirmPassword" placeholder="Nhập lại mật khẩu" required="required"
-                    />
+                    <input type="password" id="txtMatKhau2" name="txtMatKhau2" placeholder="Nhập lại mật khẩu" required/>
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Tỉnh thành:</td>
+                <td>Tỉnh thành:</td>
                 <td>
-                    <select name="slRegion" id="slRegion" required>
+                    <select name="select" id="slRegion" required>
                         <option value="default">Chọn tỉnh thành</option>
                         <option value="CT">Cần Thơ</option>
                         <option value="TPHCM">TP. HCM</option>
@@ -52,54 +51,55 @@
             </tr>
 
             <tr>
-                <td width="35%" align="left">Họ và tên:</td>
+                <td>Họ và tên:</td>
                 <td>
-                    <input type="text" id="txtName" name="txtName" placeholder="Họ và tên" required="required" />
+                    <input type="text" id="txtHoTen" name="txtHoTen" placeholder="Họ và tên" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Địa chỉ:</td>
+                <td>Địa chỉ:</td>
                 <td>
-                    <input type="text" id="txtAddress" name="txtAddress" placeholder="Địa chỉ" required="required" />
+                    <input type="text" id="txtDiaChi" name="txtDiaChi" placeholder="Địa chỉ" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Số điện thoại:</td>
+                <td>Số điện thoại:</td>
                 <td>
-                    <input type="text" id="txtPhone" name="txtPhone" placeholder="Số điện thoại" required="required" />
+                    <input type="text" id="txtDienThoai" name="txtDienThoai" placeholder="Số điện thoại" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Email:</td>
+                <td>Email:</td>
                 <td>
-                    <input type="text" id="txtEmail" name="txtEmail" placeholder="Email" required="required" />
+                    <input type="text" id="txtEmail" name="txtEmail" placeholder="Email" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Ngày sinh:</td>
-                <td></td>
+                <td>Ngày sinh:</td>
+                <td>&nbsp;</td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Mã số an toàn:</td>
+                <td>Mã số an toàn:</td>
                 <td>
-                    <input type="text" id="txtCapcha" name="txtCapcha" placeholder="Mã số an toàn" required="required" />
+                    <input type="text" id="txtMaSoAnToan" name="txtMaSoAnToan" placeholder="Mã số an toàn" required />
+                    <img src="images/security_code.png" />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td width="35%" align="left">Đồng ý với quy định thành viên bên dưới:</td>
+                <td>Đồng ý với quy định thành viên bên dưới:</td>
                 <td>
-                    <input type="checkbox" id="chkToS" name="chkToS" placeholder="Địa chỉ" required="required" />
+                    <input type="checkbox" id="chkDongYDieuKhoan" name="chkDongYDieuKhoan" placeholder="Địa chỉ" required value="checkbox" />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
@@ -116,9 +116,7 @@
             </tr>
 
             <tr>
-                <td colspan="2">
-                    </br>
-                </td>
+                <td colspan="2">&nbsp;</td>
             </tr>
         </table>
     </form>
