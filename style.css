@@ -198,6 +198,113 @@
 
 /* Kết thúc CSS biểu mẫu*/
 
+/* CSS danh sách sản phẩm */
+
+.TableSanPham {
+    background: #F2F4F1
+}
+
+.TableSanPham .SanPham {
+    background: #FFFFFF;
+    border-collapse: collapse;
+    width: 25%;
+    text-align: center;
+    padding: 5px
+}
+
+.TableSanPham img {
+    border: 0px;
+    margin-bottom: 10px
+}
+
+.TableSanPham .TimKiem {
+    background: url(images/container_header_bg.png) repeat-x;
+    padding: 5px;
+    font-size: 11px;
+    color: #444444;
+    text-align: left
+}
+
+.TableSanPham .btnSearch {
+    background-image: url(images/btnSearch.png);
+    border: 0;
+    height: 24px;
+    width: 81px
+}
+
+.TableSanPham input, select {
+    border: solid 1px #ccc
+}
+
+.TableSanPham .SapXep {
+    background: #FFFFFF;
+    text-align: right;
+    padding: 5px
+}
+
+/* Kết thúc CSS danh sách sản phẩm */
+
+/* CSS chi tiết sản phẩm */
+
+.TenSanPhamLon {
+    color: #2780B9;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.GiaCu {
+    color: #990000;
+    text-decoration: line-through;
+    font-weight: bold
+}
+
+.LienKetTinhNang .LienKetTinhNang:visited {
+    background: #0776BE;
+    color: #FFFFFF;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 11px
+}
+
+.Frame {
+    border: solid 1px #0776BE;
+    margin-top: 5px
+}
+
+/* Kết thúc CSS chi tiết sản phẩm*/
+
+/* CSS sơ đồ web */
+
+.SoDo {
+    padding: 7px;
+    padding-left: 50px;
+    margin: 0px
+}
+
+.SoDo .Level1 {
+    color: #555555;
+    font-weight: bold;
+    list-style-image: url(images/bullet_icon2.gif);
+    padding-left: 10px;
+    margin-top: 10px
+}
+
+.SoDo .Level1 ul{
+    padding-left: 30px
+}
+
+.SoDo .Level2 {
+    color: #888888;
+    font-weight: bold;
+    list-style-type: none;
+    list-style-image: url(images/bullet_icon.png);
+    border-bottom: solid 1px #eee;
+    padding: 7px;
+    padding-left: 0px
+}
+
+/* CSS sơ đồ web */
+
 /* CSS bố cục */
 
 #Skin_Container {

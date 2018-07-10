@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -136,6 +137,97 @@
                     <embed src="flashs/flash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"
                         width="100%" height="310"></embed>
                 </object>
+                <table class="TableSanPham" border="0" cellpadding="0" cellspacing="7">
+                    <tr>
+                        <td colspan="4" class="TimKiem">
+                            <form id="frmNhapLieu" name="frmNhapLieu" method="POST" action="">
+                                Tuỳ chọn <input type="text" name="txtTuyChon"/>
+                                <select name="slHang" id="slHang">
+                                    <option>Tất cả các hãng</option>
+                                    <option value="apple">Apple</option>
+                                    <option value="samsung">Samsung</option>
+                                    <option value="sony">Sony</option>
+                                    <option value="htc">HTC</option>
+                                </select>
+                                <select name="slGiaTu" id="slGiaTu">
+                                    <option>Giá từ</option>
+                                    <option value="1000">1.000.000</option>
+                                    <option value="3000">3.000.000</option>
+                                    <option value="8000">8.000.000</option>
+                                </select>
+                                <select name="slGiaDen" id="slGiaDen">
+                                    <option>Giá đến</option>
+                                    <option value="3000">3.000.000</option>
+                                    <option value="8000">8.000.000</option>
+                                    <option value="20000">20.000.000</option>
+                                </select>
+                                <input name="btnSearch" id="btnSearch" type="submit" class="btnSearch" value="Tìm kiếm"/>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="SapXep">
+                            <form id="form2" name="form2" method="POST" action="">
+                                <select name="slSapTheo">
+                                    <option>Sắp xếp</option>
+                                    <option value="gia">Giá</option>
+                                    <option value="ten">Tên</option>
+                                    <option value="nsx">Nhà sản xuất</option>
+                                </select>
+                                <select name="slThuTu">
+                                    <option>Thứ tự</option>
+                                    <option value="tang">Tăng dần</option>
+                                    <option value="giam">Giảm dần</option>
+                                </select>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="SanPham">
+                            <img src="product-imgs/ipad2_small.jpg" />
+                            <br/><span class="TenSanPham">Apple iPad 2</span>
+                            <br/><span class="Gia">Giá: 18.000.000 VND</span>
+                        </td>
+                        <td class="SanPham">
+                            <img src="product-imgs/ipod_small.jpg" />
+                            <br/><span class="TenSanPham">Apple iPod Nano</span>
+                            <br/><span class="Gia">Giá: 1.200.000 VND</span>
+                        </td>
+                        <td class="SanPham">
+                            <img src="product-imgs/ipad_touch_small.jpg" />
+                            <br/><span class="TenSanPham">Apple iPod Touch</span>
+                            <br/><span class="Gia">Giá: 3.500.000 VND</span>
+                        </td>
+                        <td class="SanPham">
+                            <img src="product-imgs/iphone_small.jpg" />
+                            <br/><span class="TenSanPham">Apple iPhone 4</span>
+                            <br/><span class="Gia">Giá: 15.000.000 VND</span>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td class="SanPham">
+                            <img src="product-imgs/vaio_small.jpg" />
+                            <br/><span class="TenSanPham">Sony Vaio Z</span>
+                            <br/><span class="Gia">Giá: 22.300.000 VND</span>
+                        </td>
+                        <td class="SanPham">
+                            <img src="product-imgs/sony_cybershot_small.jpg" />
+                            <br/><span class="TenSanPham">Sony CyberShot</span>
+                            <br/><span class="Gia">Giá: 5.200.000 VND</span>
+                        </td>
+                        <td class="SanPham">
+                            <img src="product-imgs/sony_ericsson_small.jpg" />
+                            <br/><span class="TenSanPham">Sony Ericsson</span>
+                            <br/><span class="Gia">Giá: 3.700.000 VND</span>
+                        </td>
+                        <td class="SanPham">
+                            <img src="product-imgs/sony_playstation3_small.jpg" />
+                            <br/><span class="TenSanPham">Sony PlayStation 3</span>
+                            <br/><span class="Gia">Giá: 10.100.000 VND</span>
+                        </td>
+                    </tr>
+                </table>
             </td>
         </tr>
         <tr>

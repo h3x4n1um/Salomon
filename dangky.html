@@ -5,42 +5,43 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keyword" content="Salomon, Web bán hàng trực tuyến, đặt hàng online, Cần Thơ, toàn quốc, đăng ký" />
     <title>Siêu thị điện máy - máy vi tính trực tuyến Salomon - Đăng ký</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <form id="frmNhapLieu" name="frmNhapLieu" method="post" action="">
-        <table width="100%" border="1" cellpadding="0" cellspacing="5">
+        <table class="TableForm" width="100%" border="1" cellpadding="0" cellspacing="5">
             <tr>
-                <td colspan="2">Nhập thông tin đăng ký</td>
+                <td class="TieuDe" colspan="2">Nhập thông tin đăng ký</td>
             </tr>
 
             <tr>
-                <td width="40%">Tên truy cập:</td>
-                <td>
+                <td class="Left" width="40%">Tên truy cập:</td>
+                <td class="Right">
                     <input type="text" id="txtTenDangNhap" name="txtTenDangNhap" required placeholder="Tên đăng nhập" maxlength="50" />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Mật khẩu:</td>
-                <td>
+                <td class="Left">Mật khẩu:</td>
+                <td class="Right">
                     <input type="password" id="txtMatKhau" name="txtMatKhau" required placeholder="Mật khẩu" />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Nhập lại mật khẩu:</td>
-                <td>
+                <td class="Left">Nhập lại mật khẩu:</td>
+                <td class="Right">
                     <input type="password" id="txtMatKhau2" name="txtMatKhau2" placeholder="Nhập lại mật khẩu" required/>
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Tỉnh thành:</td>
-                <td>
+                <td class="Left">Tỉnh thành:</td>
+                <td class="Right">
                     <select name="select" id="slRegion" required>
                         <option value="default">Chọn tỉnh thành</option>
                         <option value="CT">Cần Thơ</option>
@@ -52,45 +53,45 @@
             </tr>
 
             <tr>
-                <td>Họ và tên:</td>
-                <td>
+                <td class="Left">Họ và tên:</td>
+                <td class="Right">
                     <input type="text" id="txtHoTen" name="txtHoTen" placeholder="Họ và tên" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Địa chỉ:</td>
-                <td>
+                <td class="Left">Địa chỉ:</td>
+                <td class="Right">
                     <input type="text" id="txtDiaChi" name="txtDiaChi" placeholder="Địa chỉ" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Số điện thoại:</td>
-                <td>
-                    <input type="text" id="txtDienThoai" name="txtDienThoai" placeholder="Số điện thoại" required />
+                <td class="Left">Số điện thoại:</td>
+                <td class="Right">
+                    <input type="tel" id="txtDienThoai" name="txtDienThoai" placeholder="Số điện thoại" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Email:</td>
-                <td>
-                    <input type="text" id="txtEmail" name="txtEmail" placeholder="Email" required />
+                <td class="Left">Email:</td>
+                <td class="Right">
+                    <input type="email" id="txtEmail" name="txtEmail" placeholder="Email" required />
                     <label id="lblRequired">*</label>
                 </td>
             </tr>
 
             <tr>
-                <td>Ngày sinh:</td>
-                <td>&nbsp;</td>
+                <td class="Left">Ngày sinh:</td>
+                <td class="Right">&nbsp;</td>
             </tr>
 
             <tr>
-                <td>Mã số an toàn:</td>
-                <td>
+                <td class="Left">Mã số an toàn:</td>
+                <td class="Right">
                     <input type="text" id="txtMaSoAnToan" name="txtMaSoAnToan" placeholder="Mã số an toàn" required />
                     <img src="images/security_code.png" />
                     <label id="lblRequired">*</label>
@@ -98,8 +99,8 @@
             </tr>
 
             <tr>
-                <td>Đồng ý với quy định thành viên bên dưới:</td>
-                <td>
+                <td class="Left">Đồng ý với quy định thành viên bên dưới:</td>
+                <td class="Right">
                     <input type="checkbox" id="chkDongYDieuKhoan" name="chkDongYDieuKhoan" placeholder="Địa chỉ" required value="checkbox" />
                     <label id="lblRequired">*</label>
                 </td>
@@ -117,7 +118,9 @@
             </tr>
 
             <tr>
-                <td colspan="2">&nbsp;</td>
+                <td colspan="2" align="center">
+                    <input name="btnDangKi" id="btnDangKi" type="submit" value="Đăng ký" class="Button"/>
+                </td>
             </tr>
         </table>
     </form>
