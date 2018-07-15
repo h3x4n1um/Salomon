@@ -345,6 +345,27 @@
     margin: 0px
 }
 
+#Skin_Footer .style1{
+    background: #4D625D;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0px
+}
+
+#Skin_Footer .style2{
+    background: #0776BE;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0px
+}
+
+#Skin_Footer .style3{
+    background: #FFFFFF;
+    color: #666666;
+    padding: 10px;
+    margin: 0px
+}
+
 /* Kết thúc CSS bố cục */
 
 /* CSS liên kết menu ngang */

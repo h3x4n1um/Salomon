@@ -6,6 +6,7 @@
     <meta name="keyword" content="Salomon, Web bán hàng trực tuyến, đặt hàng online, Cần Thơ, toàn quốc, góp ý" />
     <title>Siêu thị điện máy - máy vi tính trực tuyến Salomon - Góp ý</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -56,7 +57,7 @@
                 </td>
                 <td class="Right">
                     <input name="txtDienThoai" type="tel" required id="txtDienThoai" maxlength="100" placeholder="Để lại số điện thoại vào đây"
-                        pattern="[0-9] {8,12}" />
+                        pattern="[0-9]{8,12}" />
                     <label id="lblBatBuoc">*</label>
                 </td>
             </tr>
@@ -120,7 +121,7 @@
 
             <tr>
                 <td colspan="2" align="center" class="Bottom">
-                    <input name="btnGui" type="submit" id="btnGui" value="Gởi góp ý" />
+                    <input name="btnGui" type="submit" id="btnGui" value="Gởi góp ý" onclick="checkFeedback()"/>
                     <input name="btnNhapLai" type="reset" id="btnNhapLai" value="Nhập lại" />
                 </td>
             </tr>

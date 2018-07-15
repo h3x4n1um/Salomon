@@ -6,6 +6,7 @@
     <meta name="keyword" content="Salomon, Web bán hàng trực tuyến, đặt hàng online, Cần Thơ, toàn quốc" />
     <title>Siêu thị điện máy - máy vi tính trực tuyến Salomon</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -161,7 +162,7 @@
                                     <option value="8000">8.000.000</option>
                                     <option value="20000">20.000.000</option>
                                 </select>
-                                <input name="btnSearch" id="btnSearch" type="submit" class="btnSearch" value="Tìm kiếm"/>
+                                <input name="btnSearch" id="btnSearch" type="submit" class="btnSearch" value="Tìm kiếm" onclick="search()"/>
                             </form>
                         </td>
                     </tr>
@@ -233,7 +234,10 @@
         <tr>
             <!-- Phần chân website -->
             <td colspan="2" align="left" id="Skin_Footer">
-                <p>
+                <p id="footer_p" class="style1">
+                    <a style="float:right; background: #4D625D; width: 15px; height: 15px; border: solid 1px #FFFFFF;" onclick="changeFooterStyle('style1')"></a>
+                    <a style="float:right; background: #0776BE; width: 15px; height: 15px; border: solid 1px #FFFFFF;" onclick="changeFooterStyle('style2')"></a>
+                    <a style="float:right; background: #FFFFFF; width: 15px; height: 15px; border: solid 1px #FFFFFF;" onclick="changeFooterStyle('style3')"></a>
                     Bản quyền &copy; 2012 bởi
                     <strong>Công ty TNHH Salomon Việt Nam</strong>
                     <br/> &reg; GPĐKKD số: 41020980 do Sở KHĐT Cần Thơ cấp ngày 25/03/2012.
